@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
- *main - main Entry point
- *main return: always 0 (Success)
+ *main - 'main' entry point
+ *@void: empty parameter list
+ *Description:“main” serves as the entry point of a C program
+ *int main(void): main function doesn't accept any parameters
+ *Return: always 0 (success)
  */
 int main(void)
 {
