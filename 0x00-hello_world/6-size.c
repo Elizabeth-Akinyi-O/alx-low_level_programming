@@ -8,14 +8,12 @@
  */
 int main(void)
 {
-	printf("Character Size: %lu bytes\n", sizeof(char));
-	printf("Unsigned Character Size: %lu bytes\n", sizeof(unsigned char));
-	printf("Integer Size: %lu bytes\n", sizeof(int));
-	printf("Short Size: %lu bytes\n", sizeof(short));
-	printf("Unsigned Short Size: %lu bytes\n", sizeof(unsigned short));
-	printf("Long Size: %lu bytes\n", sizeof(long));
-	printf("Float Size: %lu bytes\n", sizeof(float));
-	printf("Unsigned Integer Size: %lu bytes\n", sizeof(unsigned int));
-	printf("Unsigned Long Size: %lu bytes\n", sizeof(unsigned long int));
+	printf("Size of a char: %lu bytes\n", sizeof(char));
+	printf("Size of an unasigned char: %lu bytes\n", sizeof(unsigned char));
+	printf("Size of an int: %lu bytes\n", sizeof(int));
+	printf("Size of a short: %lu bytes\n", sizeof(short));
+	printf("Size of a long int: %lu bytes\n", sizeof(long int));
+	printf("Size of a long long int: %lu bytes\n", sizeof(long long int));
+	printf("Size of a float: %lu bytes\n", sizeof(float));
 	return (0);
 }
