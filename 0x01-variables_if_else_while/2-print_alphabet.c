@@ -8,6 +8,12 @@
  */
 int main(void)
 {
-	putchar("with proper grammar, but the outcome is a piece of art,\n");
+	int i;
+
+	for (i = 97; i <= 122; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
 	return (0);
 }
