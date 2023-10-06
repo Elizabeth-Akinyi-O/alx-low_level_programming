@@ -4,7 +4,7 @@
 /**
  *main - 'main' entry point
  *@void: empty parameter list
- *Description:“main” serves as the entry point of a C program
+ *Description: Checks if number is positive or negative
  *int main(void): the main function doesn't accept any parameters
  *Return: always 0 (success)
  */
