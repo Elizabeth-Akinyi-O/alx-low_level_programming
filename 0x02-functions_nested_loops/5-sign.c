@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *print_sign -  prints the sign of a number
- *@c: the lowercase character being checked
- *Return: 1  if c is lowercase and 0 if otherwise
+ *@n: number
+ *Return: 1  if n>0,  0 if n==0, and -1 if n<0
  */
 int print_sign(int n)
 {
@@ -14,7 +14,7 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 		_putchar(48);
-		return(0);
+		return (0);
 	}
 	else
 	{
