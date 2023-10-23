@@ -4,11 +4,15 @@
  *@s: pointer
  *@b: constant byte
  *@n: first n bytes of the memory area
- *Return: 
+ *Return: s
  */
- char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	char memory[98];
+	unsigned int p;
 
-	_memset(memory, '\0', 98);
-	_putchar("%c
+	for (p = 0; p < n; p++)
+	{
+		s[p] = b;
+	}
+	return (s);
+}
