@@ -31,10 +31,8 @@ int **alloc_grid(int width, int height)
 		if (matrix[a] == NULL)
 		{
 			for (--a; a >= 0; a++)
-			{
 				free(matrix[a]);
-				free(matrix);
-			}
+			free(matrix);
 			return (NULL);
 		}
 	}
