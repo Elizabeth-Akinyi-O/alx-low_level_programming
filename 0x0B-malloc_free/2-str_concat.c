@@ -12,9 +12,12 @@ char *str_concat(char *s1, char *s2)
 	size_t length1 = 0, length2 = 0, a, b;
 
 	/*if NULL is passed, treat it as an empty string*/
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
 	/*get the length of both strings*/
