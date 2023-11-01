@@ -29,6 +29,7 @@ char *_strdup(char *str)
 
 	if (cpystr == NULL)
 	{
+		free(cpystr);
 		return (NULL);
 	}
 	for (i = 0; i < n; i++)

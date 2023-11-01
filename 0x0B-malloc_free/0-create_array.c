@@ -20,6 +20,7 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == 0)
 	{
+		free(ptr);
 		return (NULL);
 	}
 
