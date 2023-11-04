@@ -11,15 +11,10 @@ int **alloc_grid(int width, int height)
 	int **matrix;
 	int a  = 0, b = 0;
 	/*checking if the width and height are 0 || -ve*/
-	if (width <= 0)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	if (height <= 0)
-	{
-		return (NULL);
-	}
-	/*allocating memory for the 2D array*/
 	matrix = malloc(height * sizeof(int *));
 	if (matrix == NULL)
 	{
@@ -30,9 +25,16 @@ int **alloc_grid(int width, int height)
 		matrix[a] = malloc(sizeof(int) * width);
 		if (matrix[a] == NULL)
 		{
-			for (--a; a >= 0; a++)
-				free(matrix[a]);
-			free(matrix);
+			if (a == 0)
+				free(matrix);
+			if (a > 0)
+			{
+				for (b = a; b >= 0; b--)
+				{
+					free(matrix[b]);
+				}
+				free(matrix);
+			}
 			return (NULL);
 		}
 	}
