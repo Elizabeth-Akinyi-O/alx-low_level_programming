@@ -9,6 +9,8 @@
 
 int (*get_op_func(char *s))(int, int)
 {
+	
+	/*declare array*/
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -17,9 +19,7 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
-	/* initializing i */
-	i = 0;
+	int i = 0; /* initializing i */
 	/**
 	 *If s does not match any of the 5 expected
 	 *operators (+, -, *, /, %), return NULL

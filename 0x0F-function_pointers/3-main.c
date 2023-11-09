@@ -5,12 +5,12 @@
  *main - program that performs simple operations
  *@argc: argument count
  *@argv: argument vector
- *Return: calculations
+ *Return: 0
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	char *op;/* operator */
-	int a, b;/* inputs */
+	int a, b;/* inputs ie a=num1 and b=num2 */
 
 	if (argc != 4)
 	{
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	a = atoi(argv[1]);
-	op = (argv[2]);
+	op = argv[2];
 	b = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
