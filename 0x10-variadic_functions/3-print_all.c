@@ -3,16 +3,13 @@
  *print_all - prints anything
  *@format: list of types of arguments passed to the function
  */
-
 void print_all(const char * const format, ...)
 {
 	int a, status;
-
 	char *str;
 	va_list ptr;
 
 	va_start(ptr, format);
-
 	a = 0;
 	while (format != NULL && format[a] != '\0')
 	{
