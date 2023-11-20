@@ -4,7 +4,7 @@
  *@head: pointer to the head pointer
  *@n: new integer
  *
- *Return: 0
+ *Return: pointer to the head pointer
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -23,5 +23,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	node_add->n = n;
 	*head = node_add;
 
-	return (0);
+	return (*head);
 }
