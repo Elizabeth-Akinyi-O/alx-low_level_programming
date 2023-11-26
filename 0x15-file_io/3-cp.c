@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		chars_count = read(file_from, buff, 1024);
 		if (chars_count == -1)
 			check_err_file(-1, 0, argv);
-		num_wr = write(file_to, buff, chars_count);
+		num_wr = write(file_to, buff, 1024);
 		if (num_wr == -1)
 			check_err_file(0, -1, argv);
 	}
